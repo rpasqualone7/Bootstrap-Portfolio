@@ -55,7 +55,7 @@ footer {
     border-bottom: 0;
   }
   
-  .auth-image {
+  #auth-image {
     float: left;
     width: 200px;
     height: auto;
@@ -63,14 +63,73 @@ footer {
     margin-right: 25px;
   }
 
+  .contact-header{
+    text-align: center
+  }
+
+  #card-1{
+    margin: 0px;
+    float: left
+  }
+
+  #card-2{
+    margin: 0px;
+    float: right
+  }
+
 @media screen and (max-width: 980px) {
-    .card {width: 75%} 
+    nav {
+      margin-right: 5px;
+    }
    }
  
    @media screen and (max-width: 768px) {
-     .card {width: 100%}
+     .main-section,
+     .sidebar{
+       max-width: 100%;
+     }
+     #main-container {
+       overflow: auto;
+     }
+     .work{
+       width: 47%;
+
+       margin-bottom: 10px;
+     }
+     .work:nth-child(even) {
+       margin-right: 0;
+     }
+     .work:nth-child(odd) {
+       float: right;
+     }
+     #auth-image {
+       width: 50%;
+     }
+     .sidebar {
+       margin-bottom: 40px;
+     }
    }
   
    @media screen and (max-width: 640px) {
-     .card {width: 100%}    
+  
+     header .container {
+       padding: 0;
+     }
+     #main-container {
+       padding-top: 0;
+     }
+     .work,
+     #auth-image{
+       width: 100%;
+     }
+     nav {
+       width: 100%;
+       margin: 15px 0;
+       text-align: center;
+     }
+     nav a {
+       width: 30%;
+       padding-left: 0;
+       margin-left: 0;
+     }
    }
